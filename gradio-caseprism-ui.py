@@ -462,4 +462,4 @@ def create_interface():
 # Launch the app
 if __name__ == "__main__":
     app = create_interface()
-    app.launch(debug=True)
+    app.launch(server_name="0.0.0.0", server_port=10000)
