@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: gradio-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python gradio-caseprism-ui.py
+    autoDeploy: true
+    envVars: []
